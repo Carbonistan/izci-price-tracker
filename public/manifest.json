@@ -1,0 +1,16 @@
+{
+  "name": "İzci - Fırsat Takipçisi",
+  "short_name": "İzci",
+  "description": "Favori ürünlerinizin fiyat indirimlerini anlık takip edin.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
