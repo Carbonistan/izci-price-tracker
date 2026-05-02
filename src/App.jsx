@@ -6,6 +6,7 @@ import Alerts from './pages/Alerts';
 import Search from './pages/Search';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import InstallPrompt from './components/InstallPrompt';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
+        <InstallPrompt />
       </MobileLayout>
     </Router>
   );
