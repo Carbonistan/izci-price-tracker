@@ -1,0 +1,83 @@
+:root {
+  --bg-color: #f4f4f9; /* Light, soft background */
+  --bg-card: #ffffff; /* Crisp white card */
+  --bg-hover: #e2e8f0;
+  --text-primary: #0f172a; /* Dark slate for high contrast */
+  --text-secondary: #64748b;
+  --accent-color: #6366f1; /* Vibrant Indigo */
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #f43f5e 100%); /* Instagram-like gradient for youth appeal */
+  --accent-hover: #4f46e5;
+  --danger-color: #ef4444;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  
+  --nav-height: 64px;
+  --header-height: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #cbd5e1; /* Outer background for desktop view */
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile Container App Layout */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 480px; /* Mobile width */
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  box-shadow: 0 0 40px rgba(0,0,0,0.1);
+}
+
+/* Content Area */
+main {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: var(--header-height);
+  padding-bottom: var(--nav-height);
+  /* Hide scrollbar for cleaner look */
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+
+/* Utils */
+.text-accent { color: var(--accent-color); }
+.text-danger { color: var(--danger-color); }
+.text-secondary { color: var(--text-secondary); }
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
